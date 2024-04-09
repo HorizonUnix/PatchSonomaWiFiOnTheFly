@@ -1,5 +1,5 @@
 # PatchSonomaWiFiOnTheFly (PSWFOTF)
-Patch the modern Broadcom Wi-Fi card on the fly during the installation of macOS Sonoma without interruption
+Patch modern Broadcom Wi-Fi card on the fly when doing a fresh install with macOS Sonoma
 
 ## Require
 
