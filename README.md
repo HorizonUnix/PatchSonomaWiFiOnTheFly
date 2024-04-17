@@ -15,7 +15,7 @@ Follow this example [guide](https://support.apple.com/en-vn/101578) from Apple o
 
 ## 3. Prepare Kext and Pkg Files
 
-1. Inject `AutoPkgInstaller.kext` into your OC folder.
+1. Inject `AutoPkgInstaller.kext` into your OC folder then do a snapshot to `config.plist`
 2. Navigate to the macOS Sonoma installer; it should look like this
 
 <img src="Img/1.png">
