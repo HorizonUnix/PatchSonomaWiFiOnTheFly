@@ -50,9 +50,6 @@ Follow this example [guide](https://support.apple.com/en-vn/101578) from Apple o
 
 <img src="Img/before.png"> -------> <img src="Img/after.png">
 
-> [!CAUTION]
-> - We **think** the members and owners of ChefKiss Inc **shouldn't** follow this guide. Why? Because Visual **has** said `(where cheap hacks = projects like OCLP)` . So, is that true? We still don't know because I've been banned from both Telegram and GitHub by ChefKiss (Visual)
-
 ### Special thanks to
 - [dortania](https://github.com/dortania/) for [OCLP](https://github.com/dortania/OpenCore-Legacy-Patcher)
 - [perez987](https://github.com/perez987) for patching Wi-Fi guide
