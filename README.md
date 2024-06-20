@@ -1,28 +1,29 @@
 # PatchSonomaWiFiOnTheFly (PSWFOTF)
-Patch modern Broadcom Wi-Fi card on the fly when doing a fresh install with macOS Sonoma
+Patch modern Broadcom Wi-Fi card on the fly when doing a fresh install with macOS Sonoma and Sequoia
 
 <img src="Img/Logo.jpg" width="150" height="150">
 
 ## Require
 
 > [!NOTE]
-> - Latest [`AutoPkgInstaller.kext`](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Acidanthera/) from OCLP
-> - Latest [`AutoPkg-Assets.pkg`](https://github.com/dortania/OpenCore-Legacy-Patcher/releases/latest/download/AutoPkg-Assets.pkg) from OCLP
-> - A USB/Hard drive macOS Sonoma Installer
+> - Latest [`AutoPkgInstaller.kext`](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Acidanthera/) from [OCLP](https://github.com/dortania/OpenCore-Legacy-Patcher)
+> - Latest [`AutoPkg-Assets.pkg`](https://github.com/dortania/OpenCore-Legacy-Patcher/releases/latest/download/AutoPkg-Assets.pkg) from [OCLP](https://github.com/dortania/OpenCore-Legacy-Patcher)
+> - A USB/Hard drive that contains macOS Sonoma/Sequoia Installer
 
 ## 1. Prepare `config.plist`
-Follow this [guide](https://github.com/perez987/Broadcom-wifi-back-on-macOS-Sonoma-by-OCLP) by [perez987](https://github.com/perez987) to prepare your `config.plist`
+Follow this [guide](https://github.com/perez987/Broadcom-wifi-back-on-macOS-Sonoma-by-OCLP) by [perez987](https://github.com/perez987) to prepare your `config.plist` and kexts
+
 ## 2. Prepare a USB/Hard drive macOS Installer
 Follow this example [guide](https://support.apple.com/en-vn/101578) from Apple or any other sources
 
 ## 3. Prepare Kext and Pkg Files
 
-1. Inject `AutoPkgInstaller.kext` into your OC folder then do a snapshot to `config.plist`
-2. Navigate to the macOS Sonoma installer; it should look like this
+1. Inject `AutoPkgInstaller.kext` into your OC folder (`\EFI\OC\Kexts\`) then do a snapshot to `config.plist`.
+2. Navigate to the USB/Hard drive that contains macOS Sonoma/Sequoia Installer; it should look like this.
 
 <img src="Img/1.png">
 
-3. Press Cmd (Win) + Shift + . (dot) to display hidden files and folders
+3. Press Cmd (Win) + Shift + . (dot) to display hidden files and folders.
 
 <img src="Img/2.png">
 
@@ -30,11 +31,11 @@ Follow this example [guide](https://support.apple.com/en-vn/101578) from Apple o
 
 <img src="Img/3.png">
 
-5. Create a new folder named `Packages`.
+5. Create a new folder named `Packages` inside hidden `Library` folder.
 
 <img src="Img/4.png">
 
-6. Paste `AutoPkg-Assets.pkg` into the `Packages` folder.
+6. Copy & paste `AutoPkg-Assets.pkg` into the `Packages` folder.
 
 <img src="Img/5.png">
 
