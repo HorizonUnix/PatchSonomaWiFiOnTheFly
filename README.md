@@ -45,7 +45,7 @@ Follow this example [guide](https://support.apple.com/en-vn/101578) from Apple o
 > [!NOTE]
 > - After a few processes, it will show the ‘percent text’ like this, which means OCLP is patching your Wi-Fi and installing OCLP to macOS.
 
-<img src="Img/proof.png">
+<img src="Img/proof.jpg">
 
 ## For NootedRed users
 > [!WARNING]
