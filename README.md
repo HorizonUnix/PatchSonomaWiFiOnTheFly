@@ -44,7 +44,9 @@ Follow this example [guide](https://support.apple.com/en-vn/101578) from Apple o
 
 > [!NOTE]
 > - After a few processes, it will show the ‘percent text’ like this, which means OCLP is patching your Wi-Fi and installing OCLP to macOS.
-> <img src="Img/proof.png">
+
+<img src="Img/proof.png">
+
 ## For NootedRed users
 > [!WARNING]
 > - After the hard drive switches from `macOS Installer` to the name you set when formatting, like `Macintosh HD` or something like that, you should disable NootedRed before booting to that stage. After disabling NootedRed, you can boot to that disk. It will restart one more time, then enable NootedRed
