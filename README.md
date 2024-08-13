@@ -46,6 +46,8 @@ Follow this example [guide](https://support.apple.com/en-vn/101578) from Apple o
 <img src="Img/proof.jpg">
 
 ## For NootedRed users
+
+### Update 13/8: The latest commit of NootedRed fixed this bug and you don't have to do these instruction below, so please update your kext to the latest commit.
 > [!WARNING]
 > - After the hard drive switches from `macOS Installer` to the name you set when formatting, like `Macintosh HD` or something like that, you should disable NootedRed before booting to that stage. After disabling NootedRed, you can boot to that disk. It will restart one more time, then enable NootedRed
 
