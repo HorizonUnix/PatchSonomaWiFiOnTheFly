@@ -1,5 +1,5 @@
 # PatchSonomaWiFiOnTheFly (PSWFOTF)
-Patch modern Broadcom Wi-Fi/Intel Wi-Fi card on the fly when doing a fresh install with macOS Sonoma and Sequoia
+Patch modern Broadcom/Intel Wi-Fi card on the fly when doing a fresh install with macOS Sonoma and Sequoia
 
 ## Explaination
 - OCLP uses `AutoPkgInstaller.kext` and `AutoPkg-Assets.pkg` to automatically patch macOS during installation.
