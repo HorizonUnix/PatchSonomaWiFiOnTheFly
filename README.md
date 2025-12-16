@@ -1,15 +1,24 @@
 # PatchSonomaWiFiOnTheFly (PSWFOTF)
-Patch modern Broadcom Wi-Fi card on the fly when doing a fresh install with macOS Sonoma and Sequoia
+Patch modern Broadcom Wi-Fi/Intel Wi-Fi card on the fly when doing a fresh install with macOS Sonoma and Sequoia
 
-## Require
+## Explaination
+- OCLP uses `AutoPkgInstaller.kext` and `AutoPkg-Assets.pkg` to automatically patch macOS during installation.
+  - Based on this mechanism, I came up with the idea of writing a guide to achieve this same auto-patching method on Hackintosh systems.
+## Requirements
 
 > [!NOTE]
 > - Latest [`AutoPkgInstaller.kext`](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Acidanthera/) from [OCLP](https://github.com/dortania/OpenCore-Legacy-Patcher)
 > - Latest [`AutoPkg-Assets.pkg`](https://github.com/dortania/OpenCore-Legacy-Patcher/releases/latest/download/AutoPkg-Assets.pkg) from [OCLP](https://github.com/dortania/OpenCore-Legacy-Patcher)
 > - A USB/Hard drive that contains macOS Sonoma/Sequoia Installer
 
-## 1. Prepare `config.plist`
-Follow this [guide](https://github.com/perez987/Broadcom-wifi-back-on-macOS-Sonoma-by-OCLP) by [perez987](https://github.com/perez987) to prepare your `config.plist` and kexts
+## 1. Prepare `config.plist` (for Broadcom)
+Follow this [guide](https://github.com/perez987/Broadcom-wifi-back-on-macOS-Sonoma-by-OCLP) by [perez987](https://github.com/perez987) to prepare your `config.plist` and kexts.
+## 1. Prepare `config.plist` (for Intel)
+Follow this [guide](https://github.com/randomappleboi/Native-Wifi-for-Hackintoshes-with-Intel-Wireless-cards-on-macOS-sequoia) to prepare your kexts, just like the [guide](https://github.com/perez987/Broadcom-wifi-back-on-macOS-Sonoma-by-OCLP) for Broadcom cards.  
+However, for Intel Wi-Fi cards, you only need to add the following `DeviceProperties` entry:  
+| Key | Type | Value |
+| ----------- | ----------- | ----------- |
+| IOName | String | pci14e4,43a0 |
 
 ## 2. Prepare a USB/Hard drive macOS Installer
 Follow this example [guide](https://support.apple.com/en-vn/101578) from Apple or any other sources
@@ -47,7 +56,9 @@ Follow this example [guide](https://support.apple.com/en-vn/101578) from Apple o
 
 ## For NootedRed users
 
-### Update 13/8: The latest commit of NootedRed fixed this bug and you don't have to do these instruction below, so please update your kext to the latest commit.
+> [!NOTE]
+> The latest commit of NootedRed fixed this bug and you don't have to do these instruction below, so please update your kext to the latest commit.
+
 > [!WARNING]
 > - After the hard drive switches from `macOS Installer` to the name you set when formatting, like `Macintosh HD` or something like that, you should disable NootedRed before booting to that stage. After disabling NootedRed, you can boot to that disk. It will restart one more time, then enable NootedRed
 
